@@ -2,7 +2,7 @@
 
 ![planes](http://i.imgur.com/SkimtmU.png)
 
-[Imgur](http://i.imgur.com/54B3OPs.png)
+![Imgur](http://i.imgur.com/54B3OPs.png)
 
 ![test](http://i.imgur.com/aHN1uNL.png)
 

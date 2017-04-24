@@ -1,6 +1,6 @@
 # PlanesNet
 
-![test tesxt](http://imgur.com/a/BKHxS)
+![planes](http://i.imgur.com/SkimtmU.png)
 
 PlanesNet is labeled training data consisting of images  
 

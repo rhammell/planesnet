@@ -4,12 +4,6 @@
 
 ![Imgur](http://i.imgur.com/4Pks2wc.png)
 
-![Imgur](http://i.imgur.com/54B3OPs.png)
-
-![test](http://i.imgur.com/aHN1uNL.png)
-
-![Imgur](http://i.imgur.com/y1DhNAS.png)
-
 PlanesNet is labeled training data consisting of images  
 
 Labeld training data for detection of airplaines in Planet satellite imagery

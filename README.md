@@ -22,7 +22,7 @@ Explain what the datasets are
 
 ## Common Operations
 
-###Loading the Data   
+### Loading the Data   
 
 Wne loadoing the data do thsi and that and this ist eh best thing eve
 
@@ -30,11 +30,16 @@ Wne loadoing the data do thsi and that and this ist eh best thing eve
 import gzip
 import cPickle
 ```
-###Saving Images
+### Saving Images
 
-Images chan gebe saved out and filler filler filler fille 
+Each individual example image 
 
 ```python
-import gzip
-import cPickle
+from PIL import Image
+
+index = 50 # Row to be saved
+row_image = planesnet['data'][index]
+
+im = Image.fromarray(row_image.reshape((3, 400)).T.reshape((20,20,3)))
+im.save('20x20.png')
 ```

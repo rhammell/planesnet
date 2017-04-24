@@ -1,6 +1,8 @@
 # PlanesNet
 
-PlanesNet is a set of labeled training data c
+![test tesxt](https://d0.awsstatic.com/public-datasets/spacenet-logo2.png)
+
+PlanesNet is labeled training data consisting of images  
 
 Labeld training data for detection of airplaines in Planet satellite imagery
 

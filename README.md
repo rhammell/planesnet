@@ -2,7 +2,7 @@
 
 ![planes](http://i.imgur.com/SkimtmU.png)
 
-![Imgur](http://i.imgur.com/4Pks2wc.png)
+![Imgur](http://i.imgur.com/IkP7Kb7.png)
 
 PlanesNet is labeled training data consisting of images  
 

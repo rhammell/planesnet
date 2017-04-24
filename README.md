@@ -1,6 +1,6 @@
 # PlanesNet
 
-![test tesxt](https://d0.awsstatic.com/public-datasets/spacenet-logo2.png)
+![test tesxt](http://imgur.com/a/BKHxS)
 
 PlanesNet is labeled training data consisting of images  
 

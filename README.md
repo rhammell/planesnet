@@ -11,7 +11,7 @@ The "planes" class includes 3500 images. Images in this class are centered on on
 The "no-planes" class includes 7000 images. Half of these images are a random sampling of different landcover features - water, vegetion, bare earth, buildings, etc. - 
 
 ![no-planes](http://i.imgur.com/9mxE7Ca.png)
- 
+![planes](http://i.imgur.com/SkimtmU.png)
 
 ## Dataset Layout
 

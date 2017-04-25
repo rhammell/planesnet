@@ -23,7 +23,7 @@ The PlanesNet dataset can be loaded into Python as a dictionary object ([see bel
 
 - **scene_ids:** a list of 10500 strings containing the unique identifier of the PlanetScope visual scene the image was extracted from. The scene id can be used with the [Planet API](https://www.planet.com/docs/reference/data-api/) to discover and download the scene. The string at index *i* indicates the scene id for the *i*th image in the array **data**. 
 
-- **locations:** a list of 10500 two-element tuples containing the longitude and latitude coordinates of the image center pixel. The tuple at index *i* indicates the location of the *i*th image in the array **data**. 
+- **locations:** a list of 10500 two-element tuples containing the longitude and latitude coordinates of the image center point. The tuple at index *i* indicates the location of the *i*th image in the array **data**. 
 
 ## Common Operations
 

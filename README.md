@@ -10,11 +10,8 @@ The "planes" class includes 3500 images. Images in this class are centered on on
 
 The "no-planes" class includes 7000 images. Half of these images are a random sampling of different landcover features - water, vegetion, bare earth, buildings, etc. - 
 
-PlanesNet is labeled training data consisting of images  
-
-Labeld training data for detection of airplaines in Planet satellite imagery
-
-The dataset is divided into five training batches and one test batch, each with 10000 images. The test batch contains exactly 1000 randomly-selected images from each class. The training batches contain the remaining images in random order, but some training batches may contain more images from one class than another. Between them, the training batches contain exactly 5000 images from each class. 
+![no-planes](http://i.imgur.com/9mxE7Ca.png)
+ 
 
 ## Dataset Layout
 

@@ -18,7 +18,12 @@ The dataset is divided into five training batches and one test batch, each with 
 
 ## Dataset Layout
 
-Explain what the datasets are
+The PlanesNet dataset can be loaded into Python as a dictionary object (see below) containing the following keys: 
+
+- **data:** this is a tes ton  this nadn do ign it
+- **labels:** tes tets te st te set e ts tes t set se t
+- **scene_ids:** athe s test se tse tse tse tse tse tse tse tes ts et
+- **locations:** asdflk asdfl; jasdflkjsf ;lsakjf sa;ldkfj as;ldfkj 
 
 ## Common Operations
 

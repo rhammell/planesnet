@@ -1,6 +1,6 @@
 # PlanesNet
 
-PlaneNet is a labeled dataset consiting of subset images extracted from [Open California](https://www.planet.com/products/open-california/) satellite imagery. The dataset includes 10500 20x20 RGB images labeled with either a "plane" or "no-plane" classification. Reference image IDs and lon/lat coordinates are also available for each image.  
+PlaneNet is a labeled dataset consiting of subset images extracted from [Open California](https://www.planet.com/products/open-california/) PlanetScope satellite imagery. The dataset includes 10500 20x20 RGB images labeled with either a "plane" or "no-plane" classification.
  
 ## Classes
 
@@ -8,7 +8,7 @@ The "planes" class includes 3500 images. Images in this class are centered on on
 
 ![planes](http://i.imgur.com/SkimtmU.png)
 
-The "no-planes" class includes 7000 images. Half of these images are a random sampling of different landcover features - water, vegetion, bare earth, buildings, etc. - 
+The "no-planes" class includes 7000 images. 3500 of these images are a random sampling of different landcover features - water, vegetion, bare earth, buildings, etc. - that do not include any portion of an airplane. The other 3500 images are "confusers" that 
 
 ![no-planes](http://i.imgur.com/9mxE7Ca.png)
 ![planes](http://i.imgur.com/SkimtmU.png)
@@ -21,7 +21,7 @@ The PlanesNet dataset can be loaded into Python as a dictionary object (see belo
 
 - **labels:** a list of 10500 numbers, valued 1 or 0, representing the "planes" class and "no-plane" class, respectively. The number at index *i* indicates the label of the *i*th image in the array **data**.
 
-- **scene_ids:** a list of 10500 strings image was extracted from. Individual images
+- **scene_ids:** a list of 10500 strings containing the unique identifier of the PlanetScope visual scene the image was extracted from. The scene id can be used with the [Planet API](https://www.planet.com/docs/reference/data-api/) to discover and download the scene. The string at index *i* indicates the scene id for the *i*th image in the array **data**. 
 
 - **locations:** a list of 10500 two-element tuples containing the longitude and latitude coordinates of the image center pixel. The tuple at index *i* indicates the location of the *i*th image in the array **data**. 
 

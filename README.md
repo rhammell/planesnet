@@ -41,14 +41,14 @@ f.close()
 ```
 ### Saving Images
 
-Each individual image is stored as a row of 1200 values within the PlanesNet data element. Images can be saved into a .png format by reshaping the row values into a 20x20x3 dimensional array that can be saved out using the Python Image Libary.  
+Each individual image is stored as a single row within the PlanesNet **data** array. Images can be saved into a .png format by reshaping the 1200 row values into a 20x20x3 dimensional array that can be saved out using the Python Image Libary.  
 
 ```python
 from PIL import Image
 
 index = 50 # Row to be saved
-row_image = planesnet['data'][index]
+row = planesnet['data'][index]
 
-im = Image.fromarray(row_image.reshape((3, 400)).T.reshape((20,20,3)))
+im = Image.fromarray(row.reshape((3, 400)).T.reshape((20,20,3)))
 im.save('20x20.png')
 ```

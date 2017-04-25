@@ -17,7 +17,7 @@ The "no-planes" class includes 7000 images. 3500 of these images are a random sa
 
 The PlanesNet dataset can be loaded into Python as a dictionary object ([see below](https://github.com/rhammell/planesnet/blob/master/README.md#loading-the-data)) containing the following elements: 
 
-- **data:** a 10500x1200 numpy array of datatype uint8. Each row of the array stores a single 20x20 color image. The first 400 entries contain the red channel values, the next 400 the green, and the final 400 the blue. The image is stored in row-major order, so that the first 20 entries of the array are the red channel values of the first row of the image.
+- **data:** a 10500x1200 numpy array of datatype uint8. Each row of the array stores a single 20x20 RGB image. The first 400 entries contain the red channel values, the next 400 the green, and the final 400 the blue. The image is stored in row-major order, so that the first 20 entries of the array are the red channel values of the first row of the image.
 
 - **labels:** a list of 10500 numbers, valued 1 or 0, representing the "planes" class and "no-plane" class, respectively. The number at index *i* indicates the label of the *i*th image in the array **data**.
 

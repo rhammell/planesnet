@@ -32,7 +32,7 @@ The PlanesNet dataset can be loaded into Python as a dictionary object (see belo
 
 ### Loading the Data   
 
-Wne loadoing the data do thsi and that and this ist eh best thing eve
+PlanesNet is distributed as a compressed "pickeld" object. The dataset can be loaded into a dictionary object by using the gzip and cPickle modules.
 
 ```python
 import gzip

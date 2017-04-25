@@ -18,12 +18,12 @@ The dataset is divided into five training batches and one test batch, each with 
 
 ## Dataset Layout
 
-The PlanesNet dataset can be loaded into Python as a dictionary object (see below) containing the following keys: 
+The PlanesNet dataset can be loaded into Python as a dictionary object (see below) containing the following elements: 
 
-- **data:** this is a tes ton  this nadn do ign it
-- **labels:** tes tets te st te set e ts tes t set se t
-- **scene_ids:** athe s test se tse tse tse tse tse tse tse tes ts et
-- **locations:** asdflk asdfl; jasdflkjsf ;lsakjf sa;ldkfj as;ldfkj 
+- **data:** a 10500x1200 numpy array of uint8s. Each row of the array stores a single 20x20 color image. The first 400 entries contain the red channel values, the next 400 the green, and the final 400 the blue. The image is stored in row-major order, so that the first 20 entries of the array are the red channel values of the first row of the image.
+- **labels:** a list of 10500 numbers, either 1. or 0, representing the "planes" class and "no-plane" class, respectively. The number at index *i* indicates the label of the *i*th image in the array **data**.
+- **scene_ids:** a list of 10500 strings image was extracted from. Individual images
+- **locations:** a list of 10500 tuples containing the longitude and latitude coordinages of the 
 
 ## Common Operations
 

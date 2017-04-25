@@ -44,7 +44,7 @@ f.close()
 ```
 ### Saving Images
 
-Each individual example image 
+Each individual image is stored as a row of 1200 values within the PlanesNet data element. Images can be saved into a .png format by reshaping the row values into a 20x20x3 dimensional array that can be saved out using the Python Image Libary.  
 
 ```python
 from PIL import Image

@@ -4,7 +4,7 @@ PlaneNet is a labeled dataset consiting of subset images extracted from [Open Ca
  
 ## Classes
 
-The "planes" class includes 3500 images. Images in this class are centered on on the body of a single airplane, with both wings and the tail visible. Example images from this class are shown below, and a mosaic of all images in this class can be seen [here]. 
+The "planes" class includes 3500 images. Images in this class are near-centered on on the body of a single airplane, with both wings and the tail visible. Example images from this class are shown below, and a mosaic of all images in this class can be seen [here]. 
 
 ![planes](http://i.imgur.com/SkimtmU.png)
 

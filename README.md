@@ -8,14 +8,14 @@ The dataset includes 10500 20x20 RGB images labeled with either a "plane" or "no
  
 ## Classes
 
-The "planes" class includes 3500 images. Images in this class are near-centered on on the body of a single airplane, with the majority of the plane's wings, tail, and nose also visible. Example images from this class are shown below, and a mosaic of all images in this class can be seen [here]. 
+The "planes" class includes 3500 images. Images in this class are near-centered on on the body of a single airplane, with the majority of the plane's wings, tail, and nose also visible. Example images from this class are shown below, and a mosaic of all images in this class can be seen [here](http://i.imgur.com/ip550Q8.jpg). 
 
 ![planes](http://i.imgur.com/SkimtmU.png)
 
 The "no-planes" class includes 7000 images. 3500 of these images are a random sampling of different landcover features - water, vegetion, bare earth, buildings, etc. - that do not include any portion of an airplane. The other 3500 images are "confusers" that 
 
 ![no-planes](http://i.imgur.com/9mxE7Ca.png)
-![planes](http://i.imgur.com/SkimtmU.png)
+![planes](http://i.imgur.com/81eOBRz.png)
 
 ## Dataset Layout
 

@@ -14,6 +14,8 @@ The "planes" class includes 3500 images. Images in this class are near-centered 
 
 The "no-planes" class includes 7000 images. 3500 of these images are a random sampling of different landcover features - water, vegetion, bare earth, buildings, etc. - that do not include any portion of an airplane. The other 3500 images are "confusers" that 
 
+[Imgur](http://i.imgur.com/edltvkg.jpg)
+
 ![no-planes](http://i.imgur.com/9mxE7Ca.png)
 ![planes](http://i.imgur.com/81eOBRz.png)
 

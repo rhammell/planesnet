@@ -4,7 +4,9 @@ PlanesNet is a labeled dataset consiting of image chips extracted from [Planet](
 
 The dataset includes 10500 20x20 RGB images labeled with either a "plane" or "no-plane" classification. Image chips were derived from Planet's full-frame visual scene products. These products are orthorectified to a 3 meter pixel 
 
-Planet's imagery was made availble through the [Open California](https://www.planet.com/products/open-california/) dataset, which is [openly licenesed](https://creativecommons.org/licenses/by-sa/4.0/). As such, PlanesNet is also available under the CC-BY-SA license.
+## License
+
+Planet's imagery used to build PlanesNet is made availble through the [Open California](https://www.planet.com/products/open-california/) dataset, which is [openly licenesed](https://creativecommons.org/licenses/by-sa/4.0/). As such, PlanesNet is also available under the CC-BY-SA license.
  
 ## Class Labels
 

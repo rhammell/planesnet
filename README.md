@@ -2,7 +2,7 @@
 
 PlanesNet is a labeled dataset consiting of image chips extracted from [Planet](https://www.planet.com/) satellite imagery. The purpose of PlanesNet is to serve as labeled training data for machine learning algorithms to learn to detect the locations of airplanes in Planet's medium resolution remote sensing imagery. 
 
-The dataset includes 10500 20x20 RGB images labeled with either a "plane" or "no-plane" classification. Image chips were derived from PlanetScope full-frame visual scene products. 
+The dataset includes 10500 20x20 RGB images labeled with either a "plane" or "no-plane" classification. Image chips were derived from PlanetScope full-frame visual scene products, which are orthorectified to a 3 meter pixel size. 
 
 PlanesNet will be continusouly updated as new Planet imagery is collected becomes available to grow the dataset. Current PlanesNet images were collected prior to April 7, 2017. 
  
@@ -12,9 +12,7 @@ The "planes" class includes 3500 images. Images in this class are near-centered 
 
 ![planes](http://i.imgur.com/SkimtmU.png)
 
-The "no-planes" class includes 7000 images. 3500 of these images are a random sampling of different landcover features - water, vegetion, bare earth, buildings, etc. - that do not include any portion of an airplane. The other 3500 images are "confusers" that 
-
-[Imgur](http://i.imgur.com/edltvkg.jpg)
+The "no-planes" class includes 7000 images. 3500 of these images are a random sampling of different landcover features - water, vegetion, bare earth, buildings, etc. - that do not include any portion of an airplane. The other 3500 images are "confusers" that contain a portion of an airplane, but not enough to full belong to the definition of the "planes" class. Example images from this class are shown below, and a mosaic of all the image in this class can be seen [here](http://i.imgur.com/edltvkg.jpg).
 
 ![no-planes](http://i.imgur.com/9mxE7Ca.png)
 ![planes](http://i.imgur.com/81eOBRz.png)

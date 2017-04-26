@@ -12,7 +12,7 @@ The "planes" class includes 3500 images. Images in this class are near-centered 
 
 ![planes](http://i.imgur.com/SkimtmU.png)
 
-The "no-planes" class includes 7000 images. 3500 of these images are a random sampling of different landcover features - water, vegetion, bare earth, buildings, etc. - that do not include any portion of an airplane. The other 3500 images are "confusers" that contain a portion of an airplane, but not enough to meet the full definition of the "planes" class. Example images from this class are shown below, and a mosaic of all the image in this class can be seen [here](http://i.imgur.com/edltvkg.jpg).
+The "no-planes" class includes 7000 images. 3500 of these images are a random sampling of different landcover features - water, vegetion, bare earth, buildings, etc. - that do not include any portion of an airplane. The other 3500 images are "confusers" that contain a portion of an airplane, but not enough to meet the full definition of the "planes" class. Example images from this class are shown below, and a mosaic of all the images in this class can be seen [here](http://i.imgur.com/edltvkg.jpg).
 
 ![no-planes](http://i.imgur.com/9mxE7Ca.png)
 ![planes](http://i.imgur.com/81eOBRz.png)

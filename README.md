@@ -8,7 +8,7 @@ PlanesNet will be continusouly updated as new Planet imagery is collected become
  
 ## Class Labels
 
-The "planes" class includes 3500 images. Images in this class are near-centered on on the body of a single airplane, with the majority of the plane's wings, tail, and nose also visible. Example images from this class are shown below, and a mosaic of all images in this class can be seen [here](http://i.imgur.com/ip550Q8.jpg). 
+The "planes" class includes 3500 images. Images in this class are near-centered on the body of a single airplane, with the majority of the plane's wings, tail, and nose also visible. Example images from this class are shown below, and a mosaic of all images in this class can be seen [here](http://i.imgur.com/ip550Q8.jpg). 
 
 ![planes](http://i.imgur.com/SkimtmU.png)
 

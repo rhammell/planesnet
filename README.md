@@ -3,10 +3,6 @@
 PlanesNet is a labeled dataset consiting of image chips extracted from [Planet](https://www.planet.com/) satellite imagery. The purpose of PlanesNet is to serve as labeled training data for machine learning algorithms to learn to detect the locations of airplanes in Planet's medium resolution remote sensing imagery. 
 
 The dataset includes 10500 20x20 RGB images labeled with either a "plane" or "no-plane" classification. Image chips were derived from Planet's full-frame visual scene products. These products are orthorectified to a 3 meter pixel 
-
-## License
-
-Planet's imagery used to build PlanesNet is made availble through the [Open California](https://www.planet.com/products/open-california/) dataset, which is [openly licenesed](https://creativecommons.org/licenses/by-sa/4.0/). As such, PlanesNet is also available under the CC-BY-SA license.
  
 ## Class Labels
 
@@ -60,3 +56,7 @@ row = planesnet['data'][index]
 im = Image.fromarray(row.reshape((3, 400)).T.reshape((20,20,3)))
 im.save('20x20.png')
 ```
+
+## License
+
+Planet's imagery used to build PlanesNet is made availble through the [Open California](https://www.planet.com/products/open-california/) dataset, which is [openly licenesed](https://creativecommons.org/licenses/by-sa/4.0/). As such, PlanesNet is also available under the CC-BY-SA license.

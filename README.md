@@ -1,12 +1,12 @@
 # PlanesNet
 
-PlanesNet is a labeled dataset consiting of image chips extracted from medium resolution [Planet](https://www.planet.com/) satellite imagery. The purpose of PlanesNet is to serve as labeled training data for machine learning algorithms to learn to detect the locations of airplanes in remote sensing imagery. 
+PlanesNet is a labeled dataset consiting of image chips extracted from [Planet](https://www.planet.com/) satellite imagery. The purpose of PlanesNet is to serve as labeled training data for machine learning algorithms to learn to detect the locations of airplanes in Planet's medium resolution remote sensing imagery. 
 
-The dataset includes 10500 20x20 RGB images labeled with either a "plane" or "no-plane" classification. 
+The dataset includes 10500 20x20 RGB images labeled with either a "plane" or "no-plane" classification. Image chips were derived from Planet's full-frame visual scene products. These products are orthorectified to a 3 meter pixel 
 
- [Open California](https://www.planet.com/products/open-california/) 
+Planet's imagery was made availble through the [Open California](https://www.planet.com/products/open-california/) dataset, which is [openly licenesed](https://creativecommons.org/licenses/by-sa/4.0/). As such, PlanesNet is also available under the CC-BY-SA license.
  
-## Classes
+## Class Labels
 
 The "planes" class includes 3500 images. Images in this class are near-centered on on the body of a single airplane, with the majority of the plane's wings, tail, and nose also visible. Example images from this class are shown below, and a mosaic of all images in this class can be seen [here](http://i.imgur.com/ip550Q8.jpg). 
 

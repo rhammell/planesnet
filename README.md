@@ -1,6 +1,6 @@
 # PlanesNet
 
-PlanesNet is a labeled dataset consiting of image chips extracted from [Planet](https://www.planet.com/) satellite imagery. The purpose of PlanesNet is to serve as labeled training data for machine learning algorithms to learn to detect the locations of airplanes in Planet's medium resolution remote sensing imagery. 
+PlanesNet is a labeled dataset consiting of image chips extracted from [Planet](https://www.planet.com/) satellite imagery. The purpose of PlanesNet is to serve as labeled training data to train machine learning algorithms to detect the locations of airplanes in Planet's medium resolution remote sensing imagery. 
 
 The dataset includes 10500 20x20 RGB images labeled with either a "plane" or "no-plane" classification. Image chips were derived from PlanetScope full-frame visual scene products, which are orthorectified to a 3 meter pixel size. 
 

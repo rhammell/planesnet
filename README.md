@@ -59,4 +59,4 @@ im.save('20x20.png')
 
 ## License
 
-Planet's imagery used to build PlanesNet is made availble through the [Open California](https://www.planet.com/products/open-california/) dataset, which is [openly licenesed](https://creativecommons.org/licenses/by-sa/4.0/). As such, PlanesNet is also available under the CC-BY-SA license.
+Satellite imagery used to build PlanesNet is made availble through Planet's [Open California](https://www.planet.com/products/open-california/) dataset, which is [openly licenesed](https://creativecommons.org/licenses/by-sa/4.0/). As such, PlanesNet is also available under the CC-BY-SA license.

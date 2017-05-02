@@ -6,7 +6,7 @@ The dataset includes 10800 20x20 RGB images labeled with either a "plane" or "no
 
 PlanesNet will be continusouly updated as new Planet imagery is collected becomes available to grow the dataset. Current PlanesNet images were collected prior to April 15, 2017. 
  
-## Class Labels
+## Class Labels   
 
 The "planes" class includes 3600 images. Images in this class are near-centered on the body of a single airplane, with the majority of the plane's wings, tail, and nose also visible. Examples of different aircraft sizes, orientations, and atmospheric conditions are included. Example images from this class are shown below. 
 

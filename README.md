@@ -8,11 +8,11 @@ PlanesNet will be continusouly updated as new Planet imagery is collected become
  
 ## Class Labels   
 
-The "planes" class includes 4700 images. Images in this class are near-centered on the body of a single airplane, with the majority of the plane's wings, tail, and nose also visible. Examples of different aircraft sizes, orientations, and atmospheric conditions are included. Example images from this class are shown below. 
+The "plane" class includes 4700 images. Images in this class are near-centered on the body of a single airplane, with the majority of the plane's wings, tail, and nose also visible. Examples of different aircraft sizes, orientations, and atmospheric conditions are included. Example images from this class are shown below. 
 
 ![planes](http://i.imgur.com/SkimtmU.png)
 
-The "no-planes" class includes 9800 images. 4700 of these images are a random sampling of different landcover features - water, vegetion, bare earth, buildings, etc. - that do not include any portion of an airplane. The other 4700 images are "confusers" that contain a portion of an airplane, but not enough to meet the full definition of the "planes" class. Example images from this class are shown below.
+The "no-plane" class includes 9800 images. 4700 of these images are a random sampling of different landcover features - water, vegetion, bare earth, buildings, etc. - that do not include any portion of an airplane. The other 4700 images are "confusers" that contain a portion of an airplane, but not enough to meet the full definition of the "plane" class. Example images from this class are shown below.
 
 ![no-planes](http://i.imgur.com/9mxE7Ca.png)
 ![planes](http://i.imgur.com/81eOBRz.png)
@@ -22,7 +22,7 @@ The "no-planes" class includes 9800 images. 4700 of these images are a random sa
 The PlanesNet dataset can be loaded into Python as a dictionary object ([see below](https://github.com/rhammell/planesnet/blob/master/README.md#loading-the-data)) containing the following elements: 
 
 - **data:** a 14700x1200 numpy array of datatype uint8. Each row of the array stores a single 20x20 RGB image. The first 400 entries contain the red channel values, the next 400 the green, and the final 400 the blue. The image is stored in row-major order, so that the first 20 entries of the array are the red channel values of the first row of the image.
-- **labels:** a list of 14700 numbers, valued 1 or 0, representing the "planes" class and "no-plane" class, respectively.
+- **labels:** a list of 14700 numbers, valued 1 or 0, representing the "plane" class and "no-plane" class, respectively.
 - **scene_ids:** a list of 14700 strings containing the unique identifier of the PlanetScope visual scene the image was extracted from. The scene id can be used with the [Planet API](https://www.planet.com/docs/reference/data-api/) to discover and download the scene.
 - **locations:** a list of 14700 two-element tuples containing the longitude and latitude coordinates of the image center point.
 

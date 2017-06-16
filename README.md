@@ -35,7 +35,7 @@ The list values at index *i* in **labels**, **scene_ids**, and **locations** eac
 PlanesNet is distributed as a compressed "pickled" object. The dataset can be loaded into a dictionary object by using the gzip and cPickle/pickle modules.
 
 ```python
-# Python 2.7
+# Python 2.x
 import gzip
 import cPickle
 
@@ -44,7 +44,7 @@ planesnet = cPickle.load(f)
 f.close()
 ``` 
 ```python
-# Python 3
+# Python 3.x
 import gzip
 import pickle
 

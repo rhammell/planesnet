@@ -23,11 +23,13 @@ The PlanesNet dataset can be loaded into Python as a dictionary object ([see bel
 
 - **data:** a 14700x1200 numpy array of datatype uint8. Each row of the array stores a single 20x20 RGB image. The first 400 entries contain the red channel values, the next 400 the green, and the final 400 the blue. The image is stored in row-major order, so that the first 20 entries of the array are the red channel values of the first row of the image.
 
-- **labels:** a list of 14700 numbers, valued 1 or 0, representing the "planes" class and "no-plane" class, respectively. The number at index *i* indicates the label of the *i*th image in the array **data**.
+- **labels:** a list of 14700 numbers, valued 1 or 0, representing the "planes" class and "no-plane" class, respectively.
 
-- **scene_ids:** a list of 14700 strings containing the unique identifier of the PlanetScope visual scene the image was extracted from. The scene id can be used with the [Planet API](https://www.planet.com/docs/reference/data-api/) to discover and download the scene. The string at index *i* indicates the scene id for the *i*th image in the array **data**. 
+- **scene_ids:** a list of 14700 strings containing the unique identifier of the PlanetScope visual scene the image was extracted from. The scene id can be used with the [Planet API](https://www.planet.com/docs/reference/data-api/) to discover and download the scene.
 
-- **locations:** a list of 14700 two-element tuples containing the longitude and latitude coordinates of the image center point. The tuple at index *i* indicates the location of the *i*th image in the array **data**. 
+- **locations:** a list of 14700 two-element tuples containing the longitude and latitude coordinates of the image center point.
+
+The list values at index *i* in **labels**, **scene_ids**, and **locations** each correspond to the *i*-th image in the **data** array.
 
 ## Common Operations
 

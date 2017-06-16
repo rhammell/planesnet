@@ -32,7 +32,7 @@ The list values at index *i* in **labels**, **scene_ids**, and **locations** eac
 
 ### Loading the Data   
 
-PlanesNet is distributed as a compressed "pickled" object. The dataset can be loaded into a dictionary object by using the gzip and cPickle/pickle modules.
+PlanesNet is distributed as a compressed "pickled" file *planesnet.pklz*. The file can be loaded into a dictionary object by using the gzip and cPickle/pickle modules.
 
 ```python
 # Python 2.x

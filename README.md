@@ -28,7 +28,7 @@ The dataset is also distributed as a compressed "pickled" file *planesnet.pklz*.
 import gzip
 import pickle
     
-f = gzip.open('planesnet.pklz','rb')
+f = gzip.open('planesnet.pklz', 'rb')
 planesnet = pickle.load(f)
 f.close()
 ```

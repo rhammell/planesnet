@@ -29,7 +29,7 @@ import gzip
 import pickle
     
 f = gzip.open('planesnet.pklz','rb')
-planesnet = pickle.load(f, encoding='latin1')
+planesnet = pickle.load(f)
 f.close()
 ```
 The loaded dictionary object will contain the following elements: 

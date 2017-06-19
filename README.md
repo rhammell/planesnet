@@ -21,9 +21,7 @@ The "no-plane" class includes 9800 images. Half of these are a random sampling o
 Provided is a zipped directory *planesnet.7z* that contains the entire dataset as .png image chips. Each individual image filename follows a specific format: *label* __ *scene id* __ *longitude* _ *latitude*.png
 
 - **label:** Valued 1 or 0, representing the "plane" class and "no-plane" class, respectively. 
-
 - **scene id:** The unique identifier of the PlanetScope visual scene the image chip was extracted from. The scene id can be used with the [Planet API](https://www.planet.com/docs/reference/data-api/) to discover and download the entire scene.
-
 - **longitude_latitude:** The longitude and latitude coordinates of the image center point, with values separated by a single underscore. 
 
 The dataset is also distributed as a compressed "pickled" file *planesnet.pklz*. This file can be loaded into a Python dictionary object by using the gzip and pickle modules.

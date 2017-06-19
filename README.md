@@ -12,7 +12,7 @@ The "plane" class includes 4900 images. Images in this class are near-centered o
 
 ![planes](http://i.imgur.com/SkimtmU.png)
 
-The "no-plane" class includes 9800 images. Half of these images are a random sampling of different landcover features - water, vegetion, bare earth, buildings, etc. - that do not include any portion of an airplane. The other half of them images are "confusers" that contain a portion of an airplane, but not enough to meet the full definition of the "plane" class. Example images from this class are shown below.
+The "no-plane" class includes 9800 images. Half of these are a random sampling of different landcover features - water, vegetion, bare earth, buildings, etc. - that do not include any portion of an airplane. The other half are "confusers" that contain a portion of an airplane, but not enough to meet the full definition of the "plane" class. Example images from this class are shown below.
 
 ![no-planes](http://i.imgur.com/9mxE7Ca.png)
 ![planes](http://i.imgur.com/81eOBRz.png)
@@ -54,7 +54,7 @@ f.close()
 ```
 ### Saving Images
 
-Each individual image is stored as a single row within the PlanesNet **data** array. Images can be saved into a .png format by reshaping the 1200 row values into a 20x20x3 dimensional array that can be saved out using the Python Image Libary.  
+Each individual image is stored as a single row within the PlanesNet **data** array. Images can be saved into a .png format using the Python Image Library by first by reshaping the 1200 row values into a 20x20x3 dimensional array.  
 
 ```python
 from PIL import Image

@@ -4,7 +4,7 @@ PlanesNet is a labeled dataset consiting of image chips extracted from [Planet](
 The dataset includes 14700 20x20 RGB images labeled with either a "plane" or "no-plane" classification. Image chips were derived from PlanetScope full-frame visual scene products, which are orthorectified to a 3 meter pixel size. 
 
 PlanesNet will be continusouly updated as new Planet imagery is collected becomes available to grow the dataset. Current PlanesNet images were collected prior to May 10, 2017. 
- 
+
 ## Class Labels   
 The "plane" class includes 4900 images. Images in this class are near-centered on the body of a single airplane, with the majority of the plane's wings, tail, and nose also visible. Examples of different aircraft sizes, orientations, and atmospheric collection conditions are included. Example images from this class are shown below. 
 
@@ -23,15 +23,14 @@ Provided is a zipped directory *planesnet.7z* that contains the entire dataset a
 - **longitude_latitude:** The longitude and latitude coordinates of the image center point, with values separated by a single underscore. 
 
 The dataset is also distributed as a compressed "pickled" file *planesnet.pklz*. This file can be loaded into a Python dictionary object by using the gzip and pickle modules.
-```python
-# Python 3
-import gzip
-import pickle
+
+    # Python 3
+    import gzip
+    import pickle
     
-f = gzip.open('planesnet.pklz','rb')
-planesnet = pickle.load(f, encoding='latin1')
-f.close()
-```
+    f = gzip.open('planesnet.pklz','rb')
+    planesnet = pickle.load(f, encoding='latin1')
+    f.close()
 The loaded dictionary object will contain the following elements: 
 
 - **data:** a 14700x1200 numpy array of datatype uint8. Each row of the array stores a single 20x20 RGB image. The first 400 entries contain the red channel values, the next 400 the green, and the final 400 the blue. The image is stored in row-major order, so that the first 20 entries of the array are the red channel values of the first row of the image.

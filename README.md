@@ -6,8 +6,6 @@ PlanesNet is a labeled dataset consiting of image chips extracted from [Planet](
 
 The dataset includes 24000 20x20 RGB images labeled with either a "plane" or "no-plane" classification. Image chips were derived from PlanetScope full-frame visual scene products, which are orthorectified to a 3 meter pixel size. 
 
-PlanesNet will be continusouly updated as new Planet imagery is collected becomes available to grow the dataset. Current PlanesNet images were collected prior to June 13, 2017. 
-
 ## Class Labels   
 The "plane" class includes 6000 images. Images in this class are near-centered on the body of a single airplane, with the majority of the plane's wings, tail, and nose also visible. Examples of different aircraft sizes, orientations, and atmospheric collection conditions are included. Example images from this class are shown below. 
 

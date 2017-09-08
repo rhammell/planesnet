@@ -1,3 +1,6 @@
+# Migration to Kaggle
+All future updates to the PlanesNet dataset will be hosted on ![Kaggle](https://www.kaggle.com/rhammell/planesnet).
+
 # PlanesNet
 PlanesNet is a labeled dataset consiting of image chips extracted from [Planet](https://www.planet.com/) satellite imagery. The purpose of PlanesNet is to serve as labeled training data to train machine learning algorithms to detect the locations of airplanes in Planet's medium resolution remote sensing imagery. 
 

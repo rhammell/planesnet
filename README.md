@@ -1,14 +1,16 @@
 # PlanesNet
 PlanesNet is a labeled dataset consiting of image chips extracted from [Planet](https://www.planet.com/) satellite imagery. The purpose of PlanesNet is to serve as labeled training data to train machine learning algorithms to detect the locations of airplanes in Planet's medium resolution remote sensing imagery. 
 
-The dataset includes 24000 20x20 RGB images labeled with either a "plane" or "no-plane" classification. Image chips were derived from PlanetScope full-frame visual scene products, which are orthorectified to a 3 meter pixel size. 
+The dataset includes 32000 20x20 RGB images labeled with either a "plane" or "no-plane" classification. Image chips were derived from PlanetScope full-frame visual scene products, which are orthorectified to a 3 meter pixel size. 
+
+PlanesNet will be continusouly updated as new Planet imagery is collected becomes available to grow the dataset. Current PlanesNet images were collected as late as July 2017. 
 
 ## Class Labels   
-The "plane" class includes 6000 images. Images in this class are near-centered on the body of a single airplane, with the majority of the plane's wings, tail, and nose also visible. Examples of different aircraft sizes, orientations, and atmospheric collection conditions are included. Example images from this class are shown below. 
+The "plane" class includes 8000 images. Images in this class are near-centered on the body of a single airplane, with the majority of the plane's wings, tail, and nose also visible. Examples of different aircraft sizes, orientations, and atmospheric collection conditions are included. Example images from this class are shown below. 
 
 ![plane](http://i.imgur.com/SkimtmU.png)
 
-The "no-plane" class includes 18000 images. A third of these are a random sampling of different landcover features - water, vegetion, bare earth, buildings, etc. - that do not include any portion of an airplane. The next third are "partial planes" that contain a portion of an airplane, but not enough to meet the full definition of the "plane" class. The last third are "confusers" - chips with bright objects or strong linear features that resemble a plane - that have previously been mislabeled by machine learning models.  Example images from this class are shown below.
+The "no-plane" class includes 24000 images. A third of these are a random sampling of different landcover features - water, vegetion, bare earth, buildings, etc. - that do not include any portion of an airplane. The next third are "partial planes" that contain a portion of an airplane, but not enough to meet the full definition of the "plane" class. The last third are "confusers" - chips with bright objects or strong linear features that resemble a plane - that have previously been mislabeled by machine learning models.  Example images from this class are shown below.
 
 ![no-plane](http://i.imgur.com/9mxE7Ca.png)
 ![no-plane](http://i.imgur.com/81eOBRz.png)
@@ -23,21 +25,21 @@ Provided is a zipped directory *planesnet.7z* that contains the entire dataset a
 
 The dataset is also distributed as a compressed "pickled" file *planesnet.pklz*. This file can be loaded into a Python dictionary object by using the gzip and pickle modules.
 
-```pyton
-# Python 3
-import gzip
-import pickle
+    ```python
+    import gzip
+    import pickle
     
-f = gzip.open('planesnet.pklz', 'rb')
-planesnet = pickle.load(f)
-f.close()
-```   
+    f = gzip.open('planesnet.pklz', 'rb')
+    planesnet = pickle.load(f)
+    f.close()
+    ```
+
 The loaded dictionary object will contain the following elements: 
 
-- **data:** a 24000x1200 numpy array of datatype uint8. Each row of the array stores a single 20x20 RGB image. The first 400 entries contain the red channel values, the next 400 the green, and the final 400 the blue. The image is stored in row-major order, so that the first 20 entries of the array are the red channel values of the first row of the image.
-- **labels:** a list of 24000 numbers, valued 1 or 0, representing the "plane" class and "no-plane" class, respectively.
-- **scene_ids:** a list of 24000 strings containing the unique identifier of the PlanetScope visual scene the image was extracted from. The scene id can be used with the [Planet API](https://www.planet.com/docs/reference/data-api/) to discover and download the scene.
-- **locations:** a list of 24000 two-element tuples containing the longitude and latitude coordinates of the image center point.
+- **data:** a 32000x1200 numpy array of datatype uint8. Each row of the array stores a single 20x20 RGB image. The first 400 entries contain the red channel values, the next 400 the green, and the final 400 the blue. The image is stored in row-major order, so that the first 20 entries of the array are the red channel values of the first row of the image.
+- **labels:** a list of 32000 numbers, valued 1 or 0, representing the "plane" class and "no-plane" class, respectively.
+- **scene_ids:** a list of 32000 strings containing the unique identifier of the PlanetScope visual scene the image was extracted from. The scene id can be used with the [Planet API](https://www.planet.com/docs/reference/data-api/) to discover and download the scene.
+- **locations:** a list of 32000 two-element tuples containing the longitude and latitude coordinates of the image center point.
 
 The list values at index *i* in **labels**, **scene_ids**, and **locations** each correspond to the *i*-th image in the **data** array.
 

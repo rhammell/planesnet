@@ -25,14 +25,14 @@ Provided is a zipped directory *planesnet.7z* that contains the entire dataset a
 
 The dataset is also distributed as a compressed "pickled" file *planesnet.pklz*. This file can be loaded into a Python dictionary object by using the gzip and pickle modules.
 
-    ```python
-    import gzip
-    import pickle
+```python
+import gzip
+import pickle
     
-    f = gzip.open('planesnet.pklz', 'rb')
-    planesnet = pickle.load(f)
-    f.close()
-    ```
+f = gzip.open('planesnet.pklz', 'rb')
+planesnet = pickle.load(f)
+f.close()
+```
 
 The loaded dictionary object will contain the following elements: 
 

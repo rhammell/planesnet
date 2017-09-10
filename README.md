@@ -26,6 +26,7 @@ Provided is a zipped directory *planesnet.7z* that contains the entire dataset a
 The dataset is also distributed as a compressed "pickled" file *planesnet.pklz*. This file can be loaded into a Python dictionary object by using the gzip and pickle modules.
 
 ```python
+# Python 3
 import gzip
 import pickle
     

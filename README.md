@@ -9,15 +9,15 @@ PlanesNet will be continusouly updated as new Planet imagery is collected become
 The "plane" class includes 8000 images. Images in this class are near-centered on the body of a single airplane, with the majority of the plane's wings, tail, and nose also visible. Examples of different aircraft sizes, orientations, and atmospheric collection conditions are included. Example images from this class are shown below. 
 
 <p align="center">
-  <img src="img/plane_class.png" width="600">
+  <img src="img/plane_class.png" width="800">
 </p>
 
 The "no-plane" class includes 24000 images. A third of these are a random sampling of different landcover features - water, vegetion, bare earth, buildings, etc. - that do not include any portion of an airplane. The next third are "partial planes" that contain a portion of an airplane, but not enough to meet the full definition of the "plane" class. The last third are "confusers" - chips with bright objects or strong linear features that resemble a plane - that have previously been mislabeled by machine learning models.  Example images from this class are shown below.
 
 <p align="center">
-  <img src="img/noplane_class_1.png" width="600"><br>
-  <img src="img/noplane_class_2.png" width="600"><br>
-  <img src="img/noplane_class_3.png" width="600">
+  <img src="img/noplane_class_1.png" width="800"><br>
+  <img src="img/noplane_class_2.png" width="800"><br>
+  <img src="img/noplane_class_3.png" width="800">
 </p>
 
 ## Dataset Layout
